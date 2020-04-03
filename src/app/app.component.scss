@@ -1,0 +1,39 @@
+.topnav {
+    .primaryAT {
+        font-family: Typograph Pro;
+        font-size: 2rem;
+        color: #e10;
+        line-height: 1.4;
+    }
+    .secondaryAT {
+        font-family: Typograph Pro Light;
+        font-size: 1.475rem;
+        text-transform: uppercase;
+        line-height: 1rem;
+    }
+    .brandicon {
+        top: 5px;
+        height: 32px;
+        margin-bottom: 12px;
+    }
+    display: block;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.actions {
+    float: right;
+    margin-right: 8px;
+    margin-top: 6px;
+    a {
+        padding-left: 8px;
+    }
+    button {
+        font-size: 1.2rem;
+        color: white;
+        text-transform: uppercase;
+        line-height: 1.375;
+        background-color: #a3a3a3;
+        border: 1px solid grey;
+    }
+}
