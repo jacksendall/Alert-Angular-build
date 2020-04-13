@@ -1,23 +1,30 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { Cont3Component } from './cont3/cont3.component';
-import { Cont2Component } from './cont2/cont2.component';
-import { Cont1Component } from './cont1/cont1.component';
-
+import { PricingComponent } from './pricing/pricing.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { AccountManagementComponent } from './account-management/account-management.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: Cont1Component
+    path: '',
+    component: HomeComponent
   },
   {
     path: 'about',
-    component: Cont2Component
+    component: AboutComponent
   },
   {
-    path: 'services',
-    component: Cont3Component
-  }
+    path: 'pricing',
+    component: PricingComponent
+  },
+  {
+    path: 'account-management',
+    component: AccountManagementComponent
+  },
+
+  //otherwise redirect to home
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
