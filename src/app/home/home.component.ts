@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { useAnimation, transition, trigger, style, animate } from '@angular/animations';
-import { transAnimation } from './animations';
+
+
 
 
     
@@ -18,3 +18,4 @@ export class HomeComponent implements OnInit {
   }
 
 }
+

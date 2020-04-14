@@ -24,17 +24,25 @@
 .actions {
     float: right;
     margin-right: 8px;
-    margin-top: 6px;
-    a {
-        padding-left: 8px;
-    }
-    button {
-        font-size: 1.2rem;
-        color: white;
+    margin-top: 2px;
+    a {}
+    .btn {
+        margin-left: 50px;
+        font-size: 1.175rem;
+        color: black;
         text-transform: uppercase;
         line-height: 1.375;
-        background-color: #a3a3a3;
-        border: 1px solid grey;
+        border-bottom: 1px solid grey;
+        border-radius: 0;
+        .btn:focus {
+            outline: 0;
+        }
+        &:active {
+            outline: 0;
+        }
+        &:hover {
+            outline: 0;
+        }
     }
 }
 

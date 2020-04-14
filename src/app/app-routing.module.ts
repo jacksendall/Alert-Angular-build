@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { AccountManagementComponent } from './account-management/account-management.component';
 
+
 const routes: Routes = [
   {
     path: '',
