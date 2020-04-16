@@ -1,6 +1,6 @@
 <div class="main-area">
     <span class="inner-content">
-        <h1>MAXIMIZE YOUR INVESTMENT<br> POTENTIAL
+        <h1>MAXIMIZE YOUR TRADING<br> POTENTIAL
         </h1>
         <span><a routerLink="/about" class="learnmore">
                 LEARN HOW
@@ -9,7 +9,7 @@
 
 </div>
 <div class="background">
-    <video class="bg-video" loop autoplay muted>
+    <video class="bg-video" [muted]="true" autoplay loop>
         <source src="assets/video/videoplayback.mp4" type="video/mp4">
     </video>
 </div>
@@ -25,6 +25,3 @@
         <br> &copy; 2020 | ALERT TRADING LIMITED | All Rights Reserved
     </p>
 </div>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="node_modules/jquery-background-video/jquery.background-video.js"></script>
-<script src="js/init.js"></script>

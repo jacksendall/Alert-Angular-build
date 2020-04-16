@@ -7,23 +7,10 @@ import { AccountManagementComponent } from './account-management/account-managem
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'pricing',
-    component: PricingComponent
-  },
-  {
-    path: 'account-management',
-    component: AccountManagementComponent
-  },
-
+  {path: '', component: HomeComponent, data: { animation: 'Fader' } },
+  {path: 'about', component: AboutComponent},
+  {path: 'pricing', component: PricingComponent, data: { animation: 'Fade' } },
+  {path: 'account-management', component: AccountManagementComponent, data: { animation: 'Fade' } },
   //otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];

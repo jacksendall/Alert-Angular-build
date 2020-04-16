@@ -16,17 +16,38 @@
         height: 32px;
         margin-bottom: 12px;
     }
+    .brand-container {
+        display: inline;
+    }
     display: block;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
+    @media (max-width: 767px) {
+        .brand-container {
+            display: block;
+            text-align: center;
+        }
+    }
 }
 
 .actions {
     float: right;
     margin-right: 8px;
     margin-top: 2px;
-    a {}
+    @media (max-width: 767px) {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
     .btn {
+        &:first-child {
+            @media (max-width: 767px) {
+                margin-left: 0px;
+            }
+        }
+        @media (max-width: 512px) {
+            margin-left: 20px;
+        }
         margin-left: 50px;
         font-size: 1.175rem;
         color: black;
@@ -34,7 +55,8 @@
         line-height: 1.375;
         border-bottom: 1px solid grey;
         border-radius: 0;
-        .btn:focus {
+        outline: none;
+        &:focus {
             outline: 0;
         }
         &:active {

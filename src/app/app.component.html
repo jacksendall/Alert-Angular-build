@@ -1,20 +1,23 @@
 <div class="nav">
     <div class="container">
         <header class="topnav">
-            <span class="primaryAT">Alert</span>
+            <div class="brand-container" routerLink="/home">
+                <span class="primaryAT">Alert</span>
 
-            <img src="assets/img/alert-icon.png" alt="Alert Trading Ltd." class="brandicon">
-            <span class="secondaryAT">Trading</span>
-            <span class="actions">
-                <a class="btn" routerLink="/home">Home</a>
-                <a class="btn" routerLink="/about">About</a>
-                <a class="btn" routerLink="/pricing">Services</a>
-            </span>
+                <img src="assets/img/alert-icon.png" alt="Alert Trading Ltd." class="brandicon">
+                <span class="secondaryAT">Trading</span>
+            </div>
+            <div class="actions">
+                <a class="btn" routerLink="/home" routerLinkActive="active">Home</a>
+                <a class="btn" routerLink="/about" routerLinkActive="active">About</a>
+                <a class="btn" routerLink="/pricing" routerLinkActive="active">Services</a>
+            </div>
         </header>
 
     </div>
 </div>
-
 <div class="content">
-    <router-outlet></router-outlet>
+    <main [@routeAnimations]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+    </main>
 </div>
