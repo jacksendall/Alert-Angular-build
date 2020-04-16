@@ -57,13 +57,7 @@
         border-radius: 0;
         outline: none;
         &:focus {
-            outline: 0;
-        }
-        &:active {
-            outline: 0;
-        }
-        &:hover {
-            outline: 0;
+            box-shadow: none;
         }
     }
 }

@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { AccountManagementComponent } from './account-management/account-management.component';
 import { Fader } from './route-animations';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -18,7 +19,8 @@ import { Fader } from './route-animations';
     HomeComponent,
     AboutComponent,
     PricingComponent,
-    AccountManagementComponent
+    AccountManagementComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

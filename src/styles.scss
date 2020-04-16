@@ -27,7 +27,10 @@ h1 {
 }
 
 .footer {
+    left: 0;
+    bottom: 0;
     .socials {
+        text-align: center;
         padding-top: 10px;
         img {
             margin: 0px 5px;
@@ -35,7 +38,6 @@ h1 {
             max-width: 30px;
         }
     }
-    bottom: 0;
     width: 100%;
     text-align: center;
     background-color: #161616;
@@ -48,4 +50,9 @@ h1 {
 
 main {
     position: relative;
+}
+
+*:focus {
+    outline: 0;
+    box-shadow: none;
 }

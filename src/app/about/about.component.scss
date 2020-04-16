@@ -1,9 +1,15 @@
 .main-area {
-    text-align: left;
-    height: calc(100vh - 53px);
+    display: block;
+    height: 110rem;
     p {
         max-width: 640px;
         line-height: 2rem;
+        i {
+            color: grey;
+        }
+    }
+    h2 {
+        font-weight: 300;
     }
     h3 {
         max-width: 640px;
@@ -16,5 +22,44 @@
         max-width: 640px;
         font-weight: 350;
         margin-bottom: 15px;
+    }
+    #mt4 {
+        border-radius: 10%;
+    }
+    #mt5 {
+        margin-left: 15px;
+        border-radius: 10%;
+    }
+    .laptop {
+        position: absolute;
+        width: auto;
+        height: 368px;
+    }
+}
+
+.isLeft {
+    text-align: left;
+    float: left;
+}
+
+.isRight {
+    text-align: right;
+    float: right;
+}
+
+.innersection {
+    margin-top: 100px;
+}
+
+.section {
+    position: relative;
+    margin-top: 100px;
+    display: block;
+    &::before {
+        content: '';
+        display: block;
+        border-bottom: 1px solid #e10;
+        width: auto;
+        margin-bottom: 25px;
     }
 }
