@@ -1,6 +1,6 @@
 .main-area {
     display: block;
-    height: 120rem;
+    height: 110rem;
     p {
         max-width: 640px;
         line-height: 2rem;
@@ -30,25 +30,12 @@
         margin-left: 15px;
         border-radius: 10%;
     }
-    .iphone {
-        height: 256px;
-    }
-    .mt4 {
-        height: 150px;
-    }
-    @media (min-width: 576px) {
-        .mt4 {
-            height: 192px;
-        }
-    }
-    @media (min-width: 768px) {
-        .mt4 {
-            height: 256px;
-        }
+    .laptop {
+        position: absolute;
+        width: auto;
+        height: 368px;
     }
 }
-
-.m-top {}
 
 .isLeft {
     text-align: left;
@@ -74,33 +61,5 @@
         border-bottom: 1px solid #e10;
         width: auto;
         margin-bottom: 25px;
-    }
-}
-
-@media (max-width: 575px) {
-    .section {
-        margin-top: 60px;
-    }
-}
-
-span {
-    margin-top: 26px;
-    z-index: 1;
-}
-
-.cta {
-    float: left;
-    z-index: 1;
-    color: black;
-    border: 2px solid white;
-    border-radius: 30px;
-    padding: 16px 64px;
-    transition: all 500ms;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
-    &:hover {
-        text-decoration: none;
-        background-color: black;
-        color: white;
-        transition: all 500ms;
     }
 }
