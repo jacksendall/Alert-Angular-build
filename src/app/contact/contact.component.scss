@@ -1,0 +1,16 @@
+.main-area {
+    height: calc(85vh - 53px);
+    text-align: center;
+    h1 {
+        font-family: Typograph Pro ExtraBold;
+        font-size: 2.775rem;
+        text-align: center;
+        font-weight: 350;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    p {
+        color: rgb(99, 99, 99);
+        text-decoration: underline;
+    }
+}

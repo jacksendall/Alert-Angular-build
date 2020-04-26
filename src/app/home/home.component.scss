@@ -40,6 +40,15 @@
             margin-top: 26px;
             z-index: 1;
         }
+        .signup {
+            margin-top: -15px;
+            .cta {
+                &:hover {
+                    background-color: rgba(238, 17, 0, 0.80);
+                    color: white;
+                }
+            }
+        }
         .cta {
             z-index: 1;
             color: white;
